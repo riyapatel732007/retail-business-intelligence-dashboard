@@ -38,7 +38,7 @@ retail-business-intelligence-dashboard/
 │
 ├── customer_shopping_behavior.csv
 ├── public customer.csv
-├── Untitled.ipynb
+├── retail_customer_analysis.ipynb
 ├── pds_project_dashbord.pbix
 └── README.md
 ```
