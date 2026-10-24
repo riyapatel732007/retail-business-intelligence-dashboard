@@ -10,6 +10,14 @@ Python and Pandas are used to prepare the dataset, handle missing values, and cr
 
 This project demonstrates how raw customer shopping data can be transformed into a structured dataset for business intelligence and data-driven decision-making.
 
+## 📸 Dashboard Preview
+
+![Retail Business Intelligence Dashboard](screenshots/dashboard-overview.png)
+
+The dashboard presents customer metrics, revenue by product category, sales by category, and customer age-group analysis. Interactive filters allow users to explore the data based on customer and shopping characteristics.
+
+Additional screenshots showing dashboard filtering and data preprocessing are available in the [`screenshots`](screenshots/) folder.
+
 ## 🎯 Objectives
 
 * Explore customer shopping behavior.
@@ -36,11 +44,20 @@ This project demonstrates how raw customer shopping data can be transformed into
 ```text
 retail-business-intelligence-dashboard/
 │
+├── README.md
 ├── customer_shopping_behavior.csv
 ├── public customer.csv
 ├── retail_customer_analysis.ipynb
-├── pds_project_dashbord.pbix
-└── README.md
+├── retail_business_intelligence_dashboard.pbix
+│
+└── screenshots/
+    ├── README.md
+    ├── dashboard-overview.png
+    ├── dashboard-filtered.png
+    ├── dashboard-filtered-store-pickup.png
+    ├── data-cleaning.png
+    ├── age-group-analysis.png
+    └── purchase-frequency.png
 ```
 
 ## 📊 Dataset Description
@@ -107,13 +124,24 @@ Exports the cleaned and transformed dataset to `public customer.csv` for further
 
 ## 📈 Power BI Dashboard
 
-The project includes a Power BI Desktop file:
+The project includes the Power BI Desktop file:
 
-**`pds_project_dashbord.pbix`**
+**`retail_business_intelligence_dashboard.pbix`**
 
-Open this file in Microsoft Power BI Desktop to view the dashboard.
+Open this file in Microsoft Power BI Desktop to explore the dashboard.
 
-The processed customer dataset can be used to explore customer shopping patterns and present data through visual reports.
+The dashboard includes visualizations for:
+
+* Number of customers
+* Average purchase amount
+* Average review rating
+* Customer subscription status
+* Revenue by product category
+* Sales by product category
+* Revenue by age group
+* Sales by age group
+
+Interactive filters allow users to explore customer shopping data using available categories, gender, subscription status, and shipping type.
 
 ## 🚀 How to Run the Project
 
@@ -148,13 +176,21 @@ pip install pandas jupyter
 jupyter notebook
 ```
 
-Open `Untitled.ipynb` and execute the notebook cells in order.
+Open `retail_customer_analysis.ipynb` and execute the notebook cells in order.
 
-**Note:** Ensure that the notebook uses the correct CSV file path. If both files are in the same directory, a relative path such as `pd.read_csv("customer_shopping_behavior.csv")` can be used.
+**Note:** Ensure that the notebook uses the correct CSV file path. If both files are in the same directory, a relative path such as the following can be used:
+
+```python
+import pandas as pd
+
+df = pd.read_csv("customer_shopping_behavior.csv")
+```
 
 ### Step 5: Open the Power BI Dashboard
 
-Open `pds_project_dashbord.pbix` using Microsoft Power BI Desktop.
+Open `retail_business_intelligence_dashboard.pbix` using Microsoft Power BI Desktop.
+
+If Power BI requests a data source, select the appropriate CSV file and verify that the data loads correctly.
 
 ## 💡 Key Learning Outcomes
 
