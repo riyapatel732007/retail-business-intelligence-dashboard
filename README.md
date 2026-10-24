@@ -53,7 +53,6 @@ retail-business-intelligence-dashboard/
 └── screenshots/
     ├── README.md
     ├── dashboard-overview.png
-    ├── dashboard-filtered.png
     ├── dashboard-filtered-store-pickup.png
     ├── data-cleaning.png
     ├── age-group-analysis.png
